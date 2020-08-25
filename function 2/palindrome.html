@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let word=prompt("Nhập từ bất kì");
+    let t=isPalindrome(word);
+    alert(t);
+    function isPalindrome(word){
+        let num=word.length;
+        let count=0;
+        for(let i=0,j=num-1;i<num/2,j>=num/2;i++,j--){
+            if(word[i]===word[j]){
+                count+=1
+            }
+        }
+        if(num/2-count<=1/2){
+            return "true"
+        } else {
+            return "false"
+        }
+    }
+</script>
+</body>
+</html>

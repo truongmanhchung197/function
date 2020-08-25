@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function reverse(arr){
+        let res=arr.reverse();
+        let t="Mảng sau khi đảo ngược là: <br>";
+        for (let i=0;i<res.length;i++){
+            t+="Phần tử thứ "+(i+1)+" : "+res[i]+"<br>"
+        }
+        return t
+    }
+    let arr=[];
+    let num=parseInt(prompt("Nhập vào số phần tử của mảng: "));
+    let a="Các phần tử của mảng là: <br>";
+    for (let i=0;i<num;i++){
+        arr[i]=parseInt(prompt("Nhập vào phần tử thứ "+(i+1)));
+        a+="Phần tử thứ "+(i+1)+" : "+arr[i]+"<br>"
+    }
+    document.write(a);
+    let b=reverse(arr);
+    document.write(b)
+</script>

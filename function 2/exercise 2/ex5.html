@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function checkMin(a,b,c){
+        if (b<a){
+            if (c<b){
+                return c
+            } else {
+                return b
+            }
+        } else{
+            if (a<c){
+                return a
+            } else {
+                return c
+            }
+        }
+    }
+    let a=parseInt(prompt("Nhập vào số thứ nhất: "));
+    let b=parseInt(prompt("Nhập vào số thứ hai: "));
+    let c=parseInt(prompt("Nhập vào số thứ ba: "));
+    let min=checkMin(a,b,c);
+    alert(min)
+</script>

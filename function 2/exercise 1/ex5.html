@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr1=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function star(value){
+        for(let i=0;i<=arr1.length;i++){
+            if (value===arr1[i]){
+                return arr2[arr1.indexOf(value)]
+            }else if (i===arr1.length){
+                return "Không có ngôi sao này"
+            }
+        }
+    }
+    let stars=prompt("Nhập vào tên ngôi sao: ");
+    alert(star(stars));
+</script>
